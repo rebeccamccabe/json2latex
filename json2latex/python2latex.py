@@ -127,7 +127,7 @@ class python2latex:
             self._tex += "\\else%"
             self._nl(3)
 
-        self._tex += "\PackageWarning{json2latex}{Undefined query `#1'}%"
+        self._tex += "\\PackageWarning{json2latex}{Undefined query `#1'}%"
         self._def_out(ind, "??")
         self._nl(2)
 
